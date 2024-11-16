@@ -149,7 +149,122 @@
     color: white;
     margin-top: 40px;
   }
-  
+
+  /* Estilo para a nova seção de Videoaulas */
+.videoaulas {
+  background-color: #f0f8ff;  /* Cor de fundo suave */
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.videoaulas h2 {
+  color: #2c3e50;  /* Título em cor escura */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.videoaulas p {
+  font-size: 16px;
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Estilização geral do footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.site-footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.site-footer .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.site-footer .social-links img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilização geral do footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.site-footer p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.site-footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.site-footer .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.site-footer .social-links img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-footer .social-links img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o copyright */
+.site-footer .copyright {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
   /* Ajustes para telas pequenas */
   @media (max-width: 768px) {
     header nav ul {

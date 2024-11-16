@@ -1,20 +1,18 @@
-// main.js
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("Página carregada e pronta para interagir.");
-    <script>
-    function pesquisarCursos() {
-        const pesquisa = document.getElementById("pesquisar").value.toLowerCase();
-        const cursos = document.querySelectorAll(".curso");
-        
-        cursos.forEach(curso => {
-            const titulo = curso.querySelector("p").textContent.toLowerCase();
-            if (titulo.includes(pesquisa)) {
-                curso.style.display = "block";  // Exibe o curso
-            } else {
-                curso.style.display = "none";  // Oculta o curso
+// Aguarda o carregamento completo do DOM antes de executar o script
+document.addEventListener("DOMContentLoaded", () => {
+    const body = document.querySelector("body");
+
+    // Função para carregar o footer
+    fetch("footer.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro ao carregar o footer: " + response.statusText);
             }
-        });
-    }
-</script>
+            return response.text();
+        })
+        .then(data => {
+            // Insere o conteúdo do footer no final do body
+            body.insertAdjacentHTML("beforeend", data);
+        })
+        .catch(error => console.error("Erro:", error));
 });
-  
