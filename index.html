@@ -8,72 +8,70 @@
 </head>
 <body>
   <!-- Menu Persistente -->
-  <header>
+  <header role="banner">
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="afiliados.html">Afiliados</a></li>
-        <li><a href="contato.html">Contato</a></li>
+      <ul class="menu">
+        <li><a href="index.html" aria-label="Página inicial">Home</a></li>
+        <li><a href="cursos.html" aria-label="Cursos disponíveis">Cursos</a></li>
+        <li><a href="afiliados.html" aria-label="Programa de Afiliados">Afiliados</a></li>
+        <li><a href="contato.html" aria-label="Página de Contato">Contato</a></li>
       </ul>
     </nav>
   </header>
-<br
 
-
-<section class="pesquisa">
+  <!-- Barra de Pesquisa -->
+  <section class="pesquisa">
     <input type="text" id="pesquisar" placeholder="Pesquise cursos..." onkeyup="pesquisarCursos()">
     <button onclick="pesquisarCursos()">Buscar</button>
-</section>
+  </section>
+
   <!-- Conteúdo Principal -->
   <main>
     <h1>Bem-vindo à nossa plataforma de cursos acessíveis e transformadores! 🎓</h1>
-    <p>Explore nossos cursos inclusivos e acessíveis para todos. 🌐</p> <!
-    <p>Aqui, você tem a oportunidade de aprender novas habilidades de forma inclusiva, acessível e com preços que cabem no seu bolso. Nosso objetivo é proporcionar uma educação de qualidade para todos, sem barreiras, sem complicação. Seja você iniciante ou avançado, temos o curso ideal para você.</p>
-    <h2>Acessibilidade é nossa prioridade!</h2>
-    <p>Todos os nossos cursos são desenvolvidos pensando na inclusão, utilizando tecnologias que garantem o máximo de acessibilidade. Se você é uma pessoa com deficiência, você pode contar com um conteúdo totalmente adaptado às suas necessidades, para que você aprenda no seu próprio ritmo e sem obstáculos.</p>
+    <p>📚 <strong>A educação tem o poder de moldar pessoas</strong>, construir um futuro melhor e mais inclusivo para todos 🌟. Aqui você encontra oportunidades de aprendizado acessível, sem barreiras 🚪.</p>
+    <p>💻 Aprenda de forma prática, interativa e acessível. Transforme o seu futuro hoje!</p>
+
+    <!-- Seção de Videoaulas -->
     <section class="videoaulas">
-        <h2>Videoaulas de Alta Qualidade 🎥 </h2>
-        <p>Todos os nossos cursos são oferecidos em videoaulas de alta qualidade, para garantir que você tenha a melhor experiência de aprendizado possível.</p>
-        <p>Você pode acessar as videoaulas em qualquer dispositivo: seja no seu computador, tablet ou celular. A plataforma é totalmente compatível com dispositivos móveis, permitindo que você aprenda onde quer que esteja.</p>
-        <p>Aproveite essa oportunidade de acessar conteúdos ricos, preparados com carinho para você, sem barreiras, e no seu ritmo! 🚀 </p>
+      <h2>🎥 Videoaulas de Alta Qualidade</h2>
+      <p>📱 Acesse nossos cursos a partir de qualquer dispositivo: computador, tablet ou celular. Aprenda onde e quando quiser!</p>
+      <p>🎯 As videoaulas são desenvolvidas com tecnologias inclusivas para garantir que todos tenham a melhor experiência de aprendizado possível.</p>
     </section>
-</main>
-<section class="surpresas">
-    <h2>🎉 Surpresas para Você!</h2> <!-- Emoji de festa -->
-    <p>Ao finalizar nossos cursos, você recebe um <strong>certificado</strong> que comprova seu aprendizado e pode ser utilizado para destacar suas habilidades no mercado de trabalho. 🏆</p> <!-- Emoji de troféu -->
-    <p>É mais uma forma de garantir que seu esforço será reconhecido. 🌟</p> <!-- Emoji de estrela -->
-</section>
 
-<!-- Seção de Afiliados e Ganhos -->
-<section class="afiliados">
-    <h2>💸 Ganhe Dinheiro Compartilhando Nossos Cursos!</h2> <!-- Emoji de dinheiro -->
-    <p>Você sabia que pode ganhar dinheiro se tornando um <strong>afiliado</strong> de nossa plataforma? 🤝</p> <!-- Emoji de aperto de mão -->
-    <p>Ao indicar nossos cursos, você recebe comissões por cada venda realizada através do seu link exclusivo. 🔗</p> <!-- Emoji de link -->
-    <p>É uma oportunidade de transformar seu conhecimento em uma fonte de renda extra. 💰</p> <!-- Emoji de dinheiro -->
-    <p><a href="pagina-de-afiliados.html" class="btn-afiliado">Clique aqui para conhecer nossos cursos e se tornar um afiliado! 🚀</a></p> <!-- Link para página de afiliados com emoji de foguete -->
-</section>
+    <!-- Seção de Surpresas -->
+    <section class="surpresas">
+      <h2>🎉 Surpresas para Você!</h2>
+      <p>🏆 Finalize os cursos e receba um certificado exclusivo para destacar suas habilidades no mercado de trabalho.</p>
+      <p>💫 Seu esforço será reconhecido e valorizado!</p>
+    </section>
 
-<footer class="site-footer">
-  <div class="footer-container">
+    <!-- Seção de Afiliados -->
+    <section class="afiliados">
+      <h2>💸 Ganhe Dinheiro Compartilhando Nossos Cursos!</h2>
+      <p>🤝 Torne-se um afiliado e comece a gerar renda indicando nossos cursos. Receba comissões por cada venda realizada!</p>
+      <p><a href="pagina-de-afiliados.html" class="btn-afiliado">Saiba mais e comece agora 🚀</a></p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-container">
       <p>Siga-nos nas redes sociais:</p>
       <div class="social-links">
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-              <img src="assets/icons/instagram-icon.png" alt="Instagram">
-          </a>
-          <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
-              <img src="assets/icons/tiktok-icon.png" alt="TikTok">
-          </a>
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-              <img src="assets/icons/youtube-icon.png" alt="YouTube">
-          </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="assets/icons/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+          <img src="assets/icons/tiktok-icon.png" alt="TikTok">
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <img src="assets/icons/youtube-icon.png" alt="YouTube">
+        </a>
       </div>
-      <p class="copyright">© 2024 Cursos Acessíveis. Todos os direitos reservados.</p>
-  </div>
-</footer>
+      <p class="copyright">© <span id="ano-atual"></span> Cursos Acessíveis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-
-<script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

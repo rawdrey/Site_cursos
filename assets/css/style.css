@@ -1,279 +1,323 @@
-/* Resetando margens e preenchimentos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  header nav ul {
-    list-style: none;
-    text-align: center;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  
-  header nav ul li a:hover {
-    text-decoration: underline;
-  }
-
-  .pesquisa {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px; /* Espaçamento abaixo da pesquisa */
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
+  color: #333;
 }
 
-.pesquisa input {
-    padding: 10px;
-    font-size: 1em;
-    width: 60%;
-    max-width: 400px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+/* Menu */
+header nav ul.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #0073e6;
+  padding: 10px;
+  list-style: none;
 }
 
-.pesquisa button {
-    padding: 10px 15px;
-    font-size: 1em;
-    margin-left: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+header nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
 }
+
+header nav ul.menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Barra de Pesquisa */
 .pesquisa {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px; /* Espaçamento abaixo da pesquisa */
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .pesquisa input {
   padding: 10px;
-  font-size: 1em;
-  width: 60%;
-  max-width: 400px;
-  border-radius: 4px;
+  font-size: 16px;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .pesquisa button {
-  padding: 10px 15px;
-  font-size: 1em;
-  margin-left: 10px;
-  background-color: #4CAF50;
+  padding: 10px 20px;
+  background-color: #0073e6;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .pesquisa button:hover {
-  background-color: #45a049;
+  background-color: #005bb5;
 }
 
+/* Conteúdo Principal */
+main h1 {
+  text-align: center;
+  color: #0073e6;
+  margin-top: 20px;
+}
 
-  /* Conteúdo principal */
-  main {
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  /* Rodapé */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
-  }
-
-  /* Estilo para a nova seção de Videoaulas */
-.videoaulas {
-  background-color: #f0f8ff;  /* Cor de fundo suave */
-  padding: 30px;
-  margin: 20px 0;
+main section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: #fff;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.videoaulas h2 {
-  color: #2c3e50;  /* Título em cor escura */
-  font-size: 24px;
+/* Botão Afiliados */
+.btn-afiliado {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-afiliado:hover {
+  background-color: #005bb5;
+}
+
+/* Rodapé */
+.site-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-container .social-links img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+footer .copyright {
+  margin-top: 10px;
+  
+}
+
+/* Resetando margens e paddings padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Seção Principal */
+main {
+  padding: 20px;
+}
+
+/* Seção Introdução */
+.afiliados-intro {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.afiliados-intro h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.afiliados-intro p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.btn-consultor {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn-consultor:hover {
+  background-color: #ff9900;
+}
+
+/* Como Funciona */
+.como-funciona {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.como-funciona h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.como-funciona ol {
+  font-size: 18px;
+}
+
+.como-funciona ol li {
   margin-bottom: 15px;
 }
 
-.videoaulas p {
-  font-size: 16px;
-  color: #34495e;
-  line-height: 1.6;
-  margin-bottom: 10px;
+/* Benefícios */
+.beneficios {
+  padding: 30px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
 }
 
-/* Estilização geral do footer */
-.site-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
+.beneficios h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.site-footer .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.beneficios ul {
+  list-style: none;
+  font-size: 18px;
 }
 
-.site-footer p {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #ccc;
+.beneficios ul li {
+  margin-bottom: 15px;
 }
 
-.site-footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.site-footer .social-links a {
+.btn-grupo {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
-.site-footer .social-links img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.btn-grupo:hover {
+  background-color: #005f7a;
 }
 
-/* Estilização geral do footer */
-.site-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+/* Seção de Materiais */
+.materiais {
+  padding: 30px;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.materiais h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.materiais ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+.materiais ul li {
+  margin-bottom: 15px;
+}
+
+/* Comece Agora */
+.comece-agora {
+  background-color: #ffffff;
   text-align: center;
-  font-family: Arial, sans-serif;
+  padding: 40px 20px;
 }
 
-.site-footer .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.comece-agora h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.site-footer p {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: #ccc;
+.comece-agora p {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
-.site-footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.site-footer .social-links a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-}
-
-.site-footer .social-links img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.site-footer .social-links img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilo para o copyright */
-.site-footer .copyright {
+.comece-agora .btn-consultor,
+.comece-agora .btn-grupo {
   margin-top: 15px;
-  font-size: 0.9rem;
-  color: #888;
 }
 
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
+.site-footer .social-links {
+  margin: 10px 0;
+}
 
-  /* Ajustes para telas pequenas */
-  @media (max-width: 768px) {
-    header nav ul {
-      padding: 0;
-    }
-  
-    header nav ul li {
-      display: block;
-      margin: 10px 0;
-    }
+.site-footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.site-footer .social-links a:hover {
+  color: #ffcc00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .afiliados-intro h1 {
+    font-size: 24px;
   }
-  
+
+  .afiliados-intro p {
+    font-size: 16px;
+  }
+
+  .beneficios ul,
+  .materiais ul {
+    font-size: 16px;
+  }
+
+  .comece-agora h2 {
+    font-size: 24px;
+  }
+
+  .comece-agora p {
+    font-size: 16px;
+  }
+}
