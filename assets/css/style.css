@@ -388,3 +388,19 @@ h1 {
 .btn-contato:hover {
   background: #218838;
 }
+.btn-detalhes {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #008000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-detalhes:hover {
+  background-color: #005500;
+}
+
