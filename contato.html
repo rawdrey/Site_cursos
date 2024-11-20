@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Cursos Acessíveis</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Menu Inicial -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="afiliados.html">Afiliados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h1>Fale Conosco</h1>
+        <p>Estamos aqui para ajudar! Se você tem dúvidas, sugestões ou precisa de suporte, entre em contato conosco. Escolha a melhor forma de nos enviar sua mensagem e responderemos o mais rápido possível!</p>
+
+        <!-- Formulário de Contato -->
+        <form action="enviar_mensagem.php" method="post">
+            <label for="nome">Nome Completo</label><br>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"><br><br>
+            
+            <label for="email">Email de Contato</label><br>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br><br>
+            
+            <label for="assunto">Assunto</label><br>
+            <select id="assunto" name="assunto">
+                <option value="duvidas-curso">Dúvidas sobre o curso</option>
+                <option value="suporte-tecnico">Suporte técnico</option>
+                <option value="sugestoes-curso">Sugestões de curso</option>
+                <option value="reclamacoes">Reclamações</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+            
+            <label for="mensagem">Mensagem</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea><br><br>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <!-- Informações Alternativas de Contato -->
+        <section>
+            <h2>Outras formas de contato</h2>
+            <ul>
+                <li><strong>Telefone:</strong> +55 (XX) XXXX-XXXX</li>
+                <li><strong>Email:</strong> <a href="mailto:contato@produtosacessiveis.com.br">contato@produtosacessiveis.com.br</a></li>
+                <li><strong>WhatsApp:</strong> <a href="https://wa.me/55XXXXXXXXXXX">Clique aqui para falar no WhatsApp</a></li>
+            </ul>
+        </section>
+
+        <!-- Horários de Atendimento -->
+        <section>
+            <h2>Horários de Atendimento</h2>
+            <p>Nosso time está disponível para atender você:</p>
+            <ul>
+                <li><strong>Segunda a Sexta:</strong> 9h às 18h</li>
+                <li><strong>Sábados:</strong> 9h às 13h</li>
+                <li><strong>Domingos e Feriados:</strong> Atendimento exclusivamente por e-mail</li>
+            </ul>
+            <p>Retornaremos o mais rápido possível, geralmente em até <strong>uma hora</strong>!</p>
+        </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <p>Siga-nos nas redes sociais:</p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                    <img src="assets/icons/tiktok-icon.png" alt="TikTok">
+                </a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="assets/icons/youtube-icon.png" alt="YouTube">
+                </a>
+            </div>
+            <p>&copy; 2024 Cursos Acessíveis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
