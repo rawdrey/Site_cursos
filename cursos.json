@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "nome": "Produção e Edição de Vídeos para Deficientes Visuais",
+        "descricao": "Este curso ensina como produzir e editar vídeos acessíveis, utilizando recursos como audiodescrição e outras ferramentas de acessibilidade.",
+        "link": "cursos/produção_e_edição_de_videos_para_deficientes_visuais/index.html"
+    },
+    {
+        "id": 2,
+        "nome": "Formatando Documentos: Criando Tabelas com Word e NVDA",
+        "descricao": "Aprenda a formatar documentos e criar tabelas no Microsoft Word, utilizando o NVDA como leitor de tela para deficientes visuais.",
+        "link": "cursos/formatando_documentos_criando_tabelas_com_word_e_nvda/index.html"
+    }
+    [
+        {
+            "id": 1,
+            "nome": "Produção e Edição de Vídeos para Deficientes Visuais",
+            "descricao": "Este curso ensina como produzir e editar vídeos acessíveis, utilizando recursos como audiodescrição e outras ferramentas de acessibilidade.",
+            "link": "cursos/produção_e_edição_de_videos_para_deficientes_visuais/index.html"
+        },
+        {
+            "id": 2,
+            "nome": "Formatando Documentos: Criando Tabelas com Word e NVDA",
+            "descricao": "Aprenda a formatar documentos e criar tabelas no Microsoft Word, utilizando o NVDA como leitor de tela para deficientes visuais.",
+            "link": "cursos/formatando_documentos_criando_tabelas_com_word_e_nvda/index.html"
+        }
+    ]
+    ]
