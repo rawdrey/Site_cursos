@@ -53,7 +53,7 @@ footer .social-links a:hover {
   text-decoration: underline;
 }
 
-/* === Estilos para Ícones FontAwesome === */
+/* === Estilos Específicos para Ícones (FontAwesome) === */
 i {
   margin-right: 5px;
   color: #2a4d69; /* Cor padrão para ícones */
@@ -63,7 +63,7 @@ header i, footer i {
   color: #fff; /* Cor especial para ícones no menu e rodapé */
 }
 
-/* === Estilos Específicos para a Página Afiliados === */
+/* === Estilos Específicos para a Página "Afiliados" === */
 .afiliados-intro {
   text-align: center;
   background-color: #f0f8ff;
@@ -165,4 +165,47 @@ header i, footer i {
 .comece-agora i {
   color: #ff9800; /* Ícones relacionados ao tema de afiliados */
   font-size: 1.3em;
+}
+
+/* === Estilos para a Página "Contato" === */
+form {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #43a047;
+}
+
+.contact-icons i {
+  color: #ff9800;
+  font-size: 1.5em;
+  margin-right: 10px;
 }
